@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio Website-Patrick</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/3dec98cce3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- new font-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--tab logo-->
+    <link rel="icon" href="images/logo.png" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="#" class="logo" onclick="clickLink()">Patrick Morrison</a>
+      <div class="large-nav">
+        <div class="mynav">
+          <a href="#about" class="nav-link border">About</a>
+          <a href="#skills-section" class="nav-link">Skills</a>
+          <a href="#projects-section" class="nav-link">Projects</a>
+          <a href="#contact-section" class="nav-link">Contact</a>
+        </div>
+      </div>
+      <button class="hamburger" id="my-button" onclick="toggleMenu()">
+        <i class="fa-sharp fa-solid fa-bars text-light"></i>
+      </button>
+      <div id="small-nav" class="hide">
+        <div class="mynav">
+          <a href="#about" class="nav-link" onclick="clickLink()">About</a>
+          <a href="#skills-section" class="nav-link" onclick="clickLink()"
+            >Skills</a
+          >
+          <a href="#projects-section" class="nav-link" onclick="clickLink()"
+            >Projects</a
+          >
+          <a href="#contact-section" class="nav-link" onclick="clickLink()"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- Hero -->
+    <div class="hero">
+      <h1 class="hero-title">Hi, I’m Patrick Morrison</h1>
+      <div class="hero-p">
+        <h4 class="hero-desc">
+          Former teacher, now front-end web developer traveling around the U.S.!
+        </h4>
+      </div>
+      <div class="hero-social-icons">
+        <a href="https://github.com/patgramo" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/patrickmorrison33" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/patgramo" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/patgramo" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+    <!-- About -->
+    <section id="about">
+      <div class="all-titles">
+        <h2 class="special-title">About Me</h2>
+      </div>
+      <div class="about-image">
+        <img src="images/about.jpg" alt="profile picture" />
+      </div>
+      <div class="about-description">
+        <p>
+          I was a 6th grade science teacher in NYC for 6 years. Now I'm
+          traveling the country with my husband! At the beginning of our
+          travels, I tutored online while taking courses in front-end web
+          development. Now that I have the skills and tools under my belt, I'm
+          working on freelance gigs that will lead me to a future career in web
+          development. Check out my skills and projects below!
+        </p>
+        <div class="about-skills">
+          <h3>HTML5</h3>
+          <h3>CSS</h3>
+          <h3>JavaScript</h3>
+          <h3>React</h3>
+          <h3>FTP & Web Hosting</h3>
+          <h3>Git & GitHub</h3>
+          <h3>Chrome Devtools</h3>
+          <h3>Code Sandbox</h3>
+          <h3>Adobe Creative Suite</h3>
+        </div>
+      </div>
+    </section>
+    <!-- Skills -->
+    <div id="skills-section">
+      <div class="all-titles">
+        <h2 class="title special">Skills</h2>
+      </div>
+      <div class="skill-card">
+        <i class="fa-solid fa-code"></i>
+        <div class="skill-card-body">
+          <h3 class="skill-card-title">Development & Design</h3>
+          <p class="skill-card-description">
+            My focus is writing clean, well-formatted, semantic
+            <strong>HTML5</strong> by hand to make sure that the content is easy
+            to read and troubleshoot. I pride myself on writing
+            <strong>CSS</strong> that is easy to read and build on. I focus on
+            keeping my CSS clean and fast to load.
+          </p>
+        </div>
+      </div>
+      <div class="skill-card">
+        <i class="fa-solid fa-file-export"></i>
+        <div class="skill-card-body">
+          <h3 class="skill-card-title">Website Deployment</h3>
+          <p class="skill-card-description">
+            Once I develop a website locally, it's time to deploy it. I work
+            with clients to pick a domain name and a hosting provider to get
+            their site live on the web. Using an FTP application like FileZilla,
+            we can transfer the code files to the hosting server.
+          </p>
+        </div>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-github"></i>
+        <div class="skill-card-body">
+          <h3 class="skill-card-title">Git and GitHub</h3>
+          <p class="skill-card-description">
+            I use the command line to access the code files for each of my
+            projects. I also use it to put my projects under version control by
+            adding, committing and pushing them to GitHub repositories.
+          </p>
+        </div>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-square-js"></i>
+        <div class="skill-card-body">
+          <h3 class="skill-card-title">JavaScript</h3>
+          <p class="skill-card-description">
+            I use Javascript to make my websites dynamic and interactive. I use
+            modern ES6 techniques to develop programs to solve problems using
+            logic and conditions.
+          </p>
+        </div>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-react"></i>
+        <div class="skill-card-body">
+          <h3 class="skill-card-title">React</h3>
+          <p class="skill-card-description">
+            I write clean and concise JSX code to manipulate and update the DOM
+            when the UI needs it, allowing it to be lightning fast. Through
+            React, I plan data flow from different components to allow the UI to
+            accept and respond to user input.
+          </p>
+        </div>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-wordpress"></i>
+        <div class="skill-card-body">
+          <h3 class="skill-card-title">WordPress</h3>
+          <p class="skill-card-description">
+            I build sites using the WordPress editor and PHP code to create
+            custom themes and pages for a website. I send videos to clients
+            showing how to use the WordPress dashboard to edit parts of the
+            website if they ever need to make revisions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Projects -->
+    <div id="projects-section">
+      <div class="all-titles">
+        <h2 class="title">Projects</h2>
+      </div>
+      <div class="project-card">
+        <a href="https://csb-qbchok.netlify.app/" target="_blank">
+          <img
+            class="project-card-image"
+            src="images/sticky-notes-app.jpg"
+            alt="sticky notes app"
+          />
+          <div class="project-card-body">
+            <h3 class="project-card-title">Sticky Notes App</h3>
+            <p class="project-card-description">
+              A sticky notes app that allows the user to add/edit new sticky
+              notes that are saved.
+            </p>
+            <ul>
+              <li>React</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://patgramo.github.io/guess-the-word/" target="_blank">
+          <img
+            class="project-card-image"
+            src="images/guessTheWord.jpg"
+            alt="guess the word game"
+          />
+          <div class="project-card-body">
+            <h3 class="project-card-title">Guess the Word Game</h3>
+            <p class="project-card-description">
+              A game that gives users 8 tries to input letters to guess a word.
+            </p>
+            <ul>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://patgramo.github.io/unplugged-retreat/" target="_blank">
+          <img
+            class="project-card-image"
+            src="images/retreat.jpg"
+            alt="retreat website"
+          />
+          <div class="project-card-body">
+            <h3 class="project-card-title">Company Retreat Website</h3>
+            <p class="project-card-description">
+              An example website for a business that provides retreats for other
+              companies.
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Media Queries</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="project-card">
+        <a
+          href="https://patgramo.github.io/javascript-drum-kit/"
+          target="_blank"
+        >
+          <img
+            class="project-card-image"
+            src="images/drum-kit.jpg"
+            alt="javascript keyboard"
+          />
+          <div class="project-card-body">
+            <h3 class="project-card-title">JS Keyboard Drum</h3>
+            <p class="project-card-description">
+              A drum kit that reacts when you press different keyboard keys.
+            </p>
+            <ul>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://tripodipt.wordpress.com/" target="_blank">
+          <img
+            class="project-card-image"
+            src="images/ptWebsite.jpg"
+            alt="pt website"
+          />
+          <div class="project-card-body">
+            <h3 class="project-card-title">PT Website</h3>
+            <p class="project-card-description">
+              My first WordPress site that was designed for a Physical
+              Therapist's private practice.
+            </p>
+            <ul>
+              <li>WordPress</li>
+              <li>PHP</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://csb-t4r2z8.netlify.app/" target="_blank">
+          <img
+            class="project-card-image"
+            src="images/nametag-generator.jpg"
+            alt="nametag generator app"
+          />
+          <div class="project-card-body">
+            <h3 class="project-card-title">Nametag Generator</h3>
+            <p class="project-card-description">
+              An app that allows users to input names and populate nametags.
+            </p>
+            <ul>
+              <li>React</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact-section">
+      <div class="contact">
+        <div class="all-titles">
+          <h2 class="special-title">Contact Me</h2>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26434.45921969832!2d-118.38712166404007!3d34.08726470039978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bed921f033e3%3A0x50e44c2d0e8a26a7!2sWest%20Hollywood%2C%20CA!5e0!3m2!1sen!2sus!4v1663187620946!5m2!1sen!2sus"
+            width="100%"
+            height="333"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="form">
+          <form
+            action="https://getform.io/f/40bd3a35-2095-4d48-a820-d56f4b9641b7"
+            method="POST"
+          >
+            <input name="name" class="name" type="text" placeholder="Name" />
+            <input
+              name="email"
+              class="email"
+              type="email"
+              placeholder="Email"
+            />
+            <input
+              name="subject"
+              class="subject"
+              type="text"
+              placeholder="Subject"
+            />
+            <textarea
+              class="project"
+              rows="5"
+              id="comment"
+              name="message"
+              placeholder="Project Details"
+            ></textarea>
+            <button type="submit" value="Submit" class="contact-button">
+              Contact Me
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="https://github.com/patgramo" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/patrickmorrison33" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/patgramo" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/patgramo" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+    <!-- load javascript after loading all html content -->
+    <script src="script.js"></script>
+  </body>
+</html>
