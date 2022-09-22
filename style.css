@@ -247,6 +247,7 @@ header button {
   padding: 1em;
   background-color: #051622;
   box-shadow: 10px 10px 8px gray, 10px 10px 8px gray;
+  height: fit-content;
 }
 .skill-card-title {
   color: #deb992;
@@ -271,7 +272,7 @@ header button {
   border-radius: 20px;
   text-align: center;
   width: 60%;
-  height: 340px;
+  height: fit-content;
   margin: 1em;
   padding: 1em;
   overflow: auto;
