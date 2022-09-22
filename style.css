@@ -364,6 +364,7 @@ header button {
 }
 iframe {
   border-radius: 10px;
+  width: 100%;
 }
 .form {
   width: 60%;
