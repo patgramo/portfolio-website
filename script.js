@@ -1,4 +1,4 @@
-function toggleMenu() {
+toggleMenu = () => {
     const smallNav = document.getElementById("small-nav");
         if (smallNav.classList.contains("hide")) {
             smallNav.classList.remove("hide")
@@ -8,8 +8,7 @@ function toggleMenu() {
             smallNav.classList.add("hide")
            }
 }
-
-function clickLink() {
+clickLink = () => {
     const smallNav = document.getElementById("small-nav");
     if (smallNav.classList.contains("show")) {
         smallNav.classList.remove("show")
