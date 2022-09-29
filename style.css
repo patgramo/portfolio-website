@@ -31,7 +31,11 @@ p {
   font-size: 16px;
   color: #deb992;
 }
+/*** Website Color Change ***/
 
+.dark-gray {
+  color: 
+}
 /***Header***/
 header {
   background-color: #051622;
@@ -99,7 +103,6 @@ header button {
   font-size: 2em;
   padding-left: 1em;
   color: #deb992;
-  background-color: #051622;
 }
 
 /***Hero***/
@@ -209,8 +212,9 @@ header button {
 .about-image img {
   height: 70%;
   max-width: 70%;
-  border-radius: 20px;
+  border-radius: 50%;
   margin: 1em;
+  background-color:#1ba098;
 }
 .about-description {
   width: 100%;
@@ -225,6 +229,7 @@ header button {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 1em;
 }
 .about-skills h3 {
   width: 80%;
@@ -543,7 +548,7 @@ textarea {
 
 /******** DESKTOP ********/
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 
   /***Hero***/
 
@@ -569,6 +574,9 @@ textarea {
   }
   .about-image img {
     width: 100%;
+  }
+  .about-skills h3{
+    width: 25%;
   }
 
   /***Cards***/

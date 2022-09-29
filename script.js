@@ -20,3 +20,4 @@ clickLink = () => {
         icon.innerHTML= "<i class='fa-sharp fa-solid fa-bars text-light'></i>"
     }
 }
+
