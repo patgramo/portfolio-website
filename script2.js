@@ -91,8 +91,9 @@ colorChange1 = () => {
     };
 
     contactButton.classList.add("contact-button-1");
-}
 
+    document.querySelector("footer").classList.add("footer-background-1");
+}
 removeColorChange1 = () => {
 
     document.body.classList.remove("website-background-1");
@@ -144,6 +145,8 @@ removeColorChange1 = () => {
     };
 
     contactButton.classList.remove("contact-button-1");
+
+    document.querySelector("footer").classList.remove("footer-background-1");
 }
 
 colorChange2 = () => {
@@ -202,6 +205,8 @@ colorChange2 = () => {
     };
 
     contactButton.classList.add("contact-button-2");
+
+    document.querySelector("footer").classList.add("footer-background-2");
 }
 
 removeColorChange2 = () => {
@@ -255,6 +260,8 @@ removeColorChange2 = () => {
     };
 
     contactButton.classList.remove("contact-button-2");
+
+    document.querySelector("footer").classList.remove("footer-background-2");
 }
 
 colorChange3 = () => {
@@ -313,6 +320,9 @@ colorChange3 = () => {
     };
 
     contactButton.classList.add("contact-button-3");
+
+    document.querySelector("footer").classList.add("footer-background-3");
+
 }
 
 removeColorChange3 = () => {
@@ -366,6 +376,8 @@ removeColorChange3 = () => {
     };
 
     contactButton.classList.remove("contact-button-3");
+
+    document.querySelector("footer").classList.remove("footer-background-3");
 }
 
 colorChange4 = () => {
@@ -424,6 +436,8 @@ colorChange4 = () => {
     };
 
     contactButton.classList.add("contact-button-4");
+
+    document.querySelector("footer").classList.add("footer-background-4");
 }
 
 removeColorChange4 = () => {
@@ -477,6 +491,8 @@ removeColorChange4 = () => {
     };
 
     contactButton.classList.remove("contact-button-4");
+
+    document.querySelector("footer").classList.remove("footer-background-4");
 }
 
 homepage = () => {
