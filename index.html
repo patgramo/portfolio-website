@@ -4,6 +4,17 @@
     <title>Portfolio Website-Patrick</title>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- linking bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <!-- linking css file -->
     <link rel="stylesheet" href="style3.css" />
     <!-- font awesome -->
@@ -23,43 +34,369 @@
   </head>
 
   <body>
-    <div class="home-container" id="home">
-      <div class="home-pic">
-        <img src="images/greeting-outline.jpg" alt="homepage profile picture" />
+    <nav class="navbar navbar-light bg-dark navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Patrick Morrison</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Color Scheme
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="greeting">
-        <h2 class="home-h2">Hi, I'm Patrick Morrison</h2>
-        <h3 class="home-h3">
-          Front-end web developer traveling around the U.S.!
-        </h3>
-        <p>
-          Choose your color scheme below to add some color to my portfolio site!
-        </p>
-        <div class="color-buttons">
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 about-img">
           <img
-            src="images/theme-1.jpg"
-            id="button-1"
-            onclick="colorChange1()"
+            src="./images/theme-1-no-outline.jpg"
+            alt="profile picture"
+            class="img-fluid profile-picture"
           />
-          <img
-            src="images/theme-2.jpg"
-            id="button-2"
-            onclick="colorChange2()"
-          />
-          <img
-            src="images/theme-3.jpg"
-            id="button-3"
-            onclick="colorChange3()"
-          />
-          <img
-            src="images/theme-4.jpg"
-            id="button-4"
-            onclick="colorChange4()"
-          />
+          <div class="social-icon-section">
+            <a
+              href="https://github.com/patgramo"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/patrickmorrison33"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/patgramo"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/patgramo"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h1>Hi, I'm Patrick Morrison</h1>
+          <p>
+            I'm a front-end web developer with a strong background in teaching
+            and learning.
+            <br />
+            <br />
+            I was a 6th grade science teacher in NYC for 6 years. Once COVID-19
+            hit, I began teaching remotely and I've been working from home ever
+            since. Now, my husband and I are traveling around the country as we
+            work! At the beginning of our travels, I tutored online while taking
+            courses in front-end web development.
+            <br />
+            <br />
+            Now that I have the skills and tools under my belt, I'm working on
+            freelance gigs that will lead me to a future career in web
+            development. Check out my skills and projects below!
+          </p>
+        </div>
+      </div>
+      <div class="row" id="skills-section">
+        <h2>Skills</h2>
+        <div class="all-skills">
+          <div class="skill">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-square-js"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-react"></i>
+            <p>React</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-github"></i>
+            <p>Git & GitHub</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-wordpress"></i>
+            <p>WordPress</p>
+          </div>
+          <div class="skill">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>Responsive Web Design</p>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-chrome"></i>
+            <p>Chrome DevTools</p>
+          </div>
+          <div class="skill">
+            <i class="fa-solid fa-file-export"></i>
+            <p>FTP & Web Hosting</p>
+          </div>
+          <div class="skill">
+            <i class="fa-regular fa-square"></i>
+            <p>Code Sandbox</p>
+          </div>
+          <div class="skill">
+            <i class="fa-regular fa-image"></i>
+            <p>Adobe Creative Suite</p>
+          </div>
+          <div class="skill">
+            <i class="fa-solid fa-gear"></i>
+            <p>APIs</p>
+          </div>
+        </div>
+      </div>
+      <div id="projects-section">
+        <h2 class="h2">Projects</h2>
+        <div
+          id="carouselExampleControls"
+          class="carousel"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="images/guessTheWord.jpg"
+                    class="d-block w-100"
+                    alt="guess the word game"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Guess the Word Game</h5>
+                  <p class="card-text">
+                    A game that gives users 8 tries to input letters to guess a
+                    word.
+                  </p>
+                  <ul>
+                    <li>React</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                  <a
+                    href="https://patgramo.github.io/guess-the-word/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Click Me
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="images/sticky-notes-app.jpg"
+                    class="d-block w-100"
+                    alt="sticky notes app"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Sticky Notes App</h5>
+                  <p class="card-text">
+                    A sticky notes app that allows the user to add/edit/save
+                    sticky notes.
+                  </p>
+                  <ul>
+                    <li>React</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                  <a
+                    href="https://csb-qbchok.netlify.app/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Click Me</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="images/retreat.jpg"
+                    class="d-block w-100"
+                    alt="retreat website"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Company Retreat Website</h5>
+                  <p class="card-text">
+                    An example website for a comapny retreat business.
+                  </p>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Media Queries</li>
+                  </ul>
+                  <a
+                    href="https://patgramo.github.io/unplugged-retreat/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Click Me</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="images/drum-kit.jpg"
+                    class="d-block w-100"
+                    alt="JavaScript Drum Keyboard"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">JS Keyboard Drum</h5>
+                  <p class="card-text">
+                    A drum kit that reacts when you press different keyboard
+                    keys.
+                  </p>
+                  <ul>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                  <a
+                    href="https://patgramo.github.io/javascript-drum-kit/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Click Me</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="images/ptWebsite.jpg"
+                    class="d-block w-100"
+                    alt="Physical Therapy Website"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Physical Therapy Website</h5>
+                  <p class="card-text">
+                    My first WP site that was designed for a Physical
+                    Therapist's private practice.
+                  </p>
+                  <ul>
+                    <li>WordPress</li>
+                    <li>PHP</li>
+                    <li>CSS</li>
+                  </ul>
+                  <a
+                    href="https://tripodipt.wordpress.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Click Me</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img
+                    src="images/nametag-generator.jpg"
+                    class="d-block w-100"
+                    alt="Nametag Generator App"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Nametag Generator</h5>
+                  <p class="card-text">
+                    An app that allows users to input names and populate
+                    nametags.
+                  </p>
+                  <ul>
+                    <li>React</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                  <a
+                    href="https://csb-t4r2z8.netlify.app/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Click Me</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </div>
-    <!-- Header -->
+    <!-- Header
     <div class="hide-all" id="main-page">
       <header id="header">
         <a
@@ -97,7 +434,7 @@
         </div>
       </header>
 
-      <!-- About -->
+       About
       <section id="about">
         <div class="about-image">
           <img src="" alt="profile picture" id="profile-pic" />
@@ -149,7 +486,7 @@
           </h4>
         </div>
       </section>
-      <!-- Skills -->
+     Skills
       <div id="skills-section">
         <h2 class="h2">Skills</h2>
         <div id="all-skills">
@@ -203,7 +540,7 @@
           </div>
         </div>
       </div>
-      <!-- Projects -->
+      Projects
       <div id="projects-section">
         <h2 class="h2">Projects</h2>
         <div class="project-card">
@@ -337,7 +674,7 @@
           </a>
         </div>
       </div>
-      <!-- Contact -->
+       Contact
       <div id="contact-section">
         <h2 class="h2">Let's Connect!</h2>
         <div class="contact">
@@ -452,8 +789,23 @@
           <img src="images/theme-4.jpg" />
         </a>
       </footer>
-      <!-- load javascript after loading all html content -->
-      <script src="script3.js"></script>
-    </div>
+    </div> -->
+    <!-- load bootstrap javascript after loading all html content -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script3.js"></script>
   </body>
 </html>
