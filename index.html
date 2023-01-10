@@ -22,8 +22,8 @@
     <link rel="icon" href="images/logo.png" />
   </head>
 
-  <body>
-    <div class="home-container" id="home">
+  <body class="website-background-1">
+    <!-- <div class="home-container" id="home">
       <div class="home-pic">
         <img src="images/greeting-outline.jpg" alt="homepage profile picture" />
       </div>
@@ -58,41 +58,123 @@
           />
         </div>
       </div>
-    </div>
-    <!-- Header -->
-    <div class="hide-all" id="main-page">
-      <header id="header">
-        <a
-          href=""
-          id="logo"
-          onclick="clickLink(), homepage(), removeColorChange1(), removeColorChange2(), removeColorChange3(), removeColorChange4()"
-          >Patrick Morrison</a
-        >
+    </div> -->
+    <!-- Header and NAV -->
+    <div id="main-page">
+      <header id="header" class="header-background-1">
         <div class="large-nav">
-          <div class="mynav" id="nav">
-            <a href="#about" class="nav-link">About</a>
-            <a href="#skills-section" class="nav-link">Skills</a>
-            <a href="#projects-section" class="nav-link">Projects</a>
-            <a href="#contact-section" class="nav-link" id="no-border"
-              >Contact</a
+          <div class="mynav mynav-1" id="nav">
+            <a href="#about" class="nav-link nav-link-1">About</a>
+            <a href="#skills-section" class="nav-link nav-link-1">Skills</a>
+            <a href="#projects-section" class="nav-link nav-link-1">Projects</a>
+            <a href="#contact-section" class="nav-link nav-link-1">Contact</a>
+            <div
+              id="color-scheme-dropdown"
+              class="nav-link nav-link-1"
+              onclick="toggleColorMenu()"
             >
+              <button id="arrow" class="nav-link nav-link-1">
+                Color Scheme
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div id="color-scheme-menu" class="hide color-scheme-menu-1">
+                <button
+                  class="nav-link nav-link-1"
+                  onclick="removeColorChange2(), removeColorChange3(), removeColorChange4(), colorChange1(), toggleColorMenu()"
+                >
+                  Color 1
+                </button>
+                <button
+                  class="nav-link nav-link-1"
+                  onclick="removeColorChange1(), removeColorChange3(), removeColorChange4(), colorChange2(), toggleColorMenu()"
+                >
+                  Color 2
+                </button>
+                <button
+                  class="nav-link nav-link-1"
+                  onclick="removeColorChange1(), removeColorChange2(), removeColorChange4(), colorChange3(), toggleColorMenu()"
+                >
+                  Color 3
+                </button>
+                <button
+                  class="nav-link nav-link-1"
+                  onclick=" toggleColorMenu(), removeColorChange1(), removeColorChange2(), removeColorChange3(), colorChange4()"
+                >
+                  Color 4
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <button class="hamburger" id="my-button" onclick="toggleMenu()">
+        <button
+          class="hamburger hamburger-1"
+          id="my-button"
+          onclick="toggleHamburgerMenu()"
+        >
           <i class="fa-sharp fa-solid fa-bars text-light"></i>
         </button>
-        <div id="small-nav" class="hide">
-          <div class="mynav">
-            <a href="#about" class="nav-link" onclick="clickLink()">About</a>
-            <a href="#skills-section" class="nav-link" onclick="clickLink()"
+        <div id="small-nav" class="hide small-nav-1">
+          <div class="mynav mynav-1">
+            <a
+              href="#about"
+              class="nav-link nav-link-1"
+              onclick="toggleHamburgerMenu()"
+              >About</a
+            >
+            <a
+              href="#skills-section"
+              class="nav-link nav-link-1"
+              onclick="toggleHamburgerMenu()"
               >Skills</a
             >
-            <a href="#projects-section" class="nav-link" onclick="clickLink()"
+            <a
+              href="#projects-section"
+              class="nav-link nav-link-1"
+              onclick="toggleHamburgerMenu()"
               >Projects</a
             >
-            <a href="#contact-section" class="nav-link" onclick="clickLink()"
+            <a
+              href="#contact-section"
+              class="nav-link nav-link-1"
+              onclick="toggleHamburgerMenu()"
               >Contact</a
             >
+            <div id="color-scheme-dropdown" class="nav-link nav-link-1">
+              <button
+                id="arrow"
+                class="nav-link nav-link-1"
+                onclick="toggleColorMenu()"
+              >
+                Color Scheme
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div id="color-scheme-menu" class="hide color-scheme-menu-1">
+                <button
+                  class="nav-link nav-link-1"
+                  onclick="removeColorChange2(), removeColorChange3(), removeColorChange4(), colorChange1(), toggleColorMenu()"
+                >
+                  Color 1
+                </button>
+                <button
+                  class="nav-link nav-link-1"
+                  onclick="removeColorChange1(), removeColorChange3(), removeColorChange4(), colorChange2(), toggleColorMenu()"
+                >
+                  Color 2
+                </button>
+                <button
+                  class="nav-link nav-link-1"
+                  onclick="removeColorChange1(), removeColorChange2(), removeColorChange4(), colorChange3(), toggleColorMenu()"
+                >
+                  Color 3
+                </button>
+                <button
+                  class="nav-link nav-link-1"
+                  onclick="removeColorChange1(), removeColorChange2(), removeColorChange3(), colorChange4(), toggleColorMenu()"
+                >
+                  Color 4
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -100,37 +182,45 @@
       <!-- About -->
       <section id="about">
         <div class="about-image">
-          <img src="" alt="profile picture" id="profile-pic" />
+          <img
+            src="images/theme-1-outline.jpg"
+            alt="profile picture"
+            id="profile-pic"
+          />
           <div class="social-icons">
-            <a href="https://github.com/patgramo" target="_blank" class="icon">
+            <a
+              href="https://github.com/patgramo"
+              target="_blank"
+              class="icon icon-1"
+            >
               <i class="fa-brands fa-github"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/patrickmorrison33"
               target="_blank"
-              class="icon"
+              class="icon icon-1"
             >
               <i class="fa-brands fa-linkedin"></i>
             </a>
             <a
               href="https://www.instagram.com/patgramo"
               target="_blank"
-              class="icon"
+              class="icon icon-1"
             >
               <i class="fa-brands fa-instagram"></i>
             </a>
             <a
               href="https://www.facebook.com/patgramo"
               target="_blank"
-              class="icon"
+              class="icon icon-1"
             >
               <i class="fa-brands fa-facebook"></i>
             </a>
           </div>
         </div>
         <div class="about-description">
-          <h4 class="h4">
-            <span id="highlight"
+          <h4 class="h4 h4-1">
+            <span id="highlight" class="highlighter-1"
               >I'm a front-end web developer with a strong background in
               teaching and learning.
             </span>
@@ -151,53 +241,53 @@
       </section>
       <!-- Skills -->
       <div id="skills-section">
-        <h2 class="h2">Skills</h2>
-        <div id="all-skills">
-          <div class="skill">
+        <h2 class="h2 h2-1">Skills</h2>
+        <div id="all-skills" class="skill-section-1">
+          <div class="skill skill-1">
             <i class="fa-brands fa-html5"></i>
             <p>HTML</p>
           </div>
-          <div class="skill">
+          <div class="skill skill-1">
             <i class="fa-brands fa-css3-alt"></i>
             <p>CSS</p>
           </div>
-          <div class="skill">
+          <div class="skill skill-1">
             <i class="fa-brands fa-square-js"></i>
             <p>JavaScript</p>
           </div>
-          <div class="skill">
+          <div class="skill skill-1">
             <i class="fa-brands fa-react"></i>
             <p>React</p>
           </div>
-          <div class="skill">
+          <div class="skill skill-1">
             <i class="fa-brands fa-github"></i>
             <p>Git & GitHub</p>
           </div>
-          <div class="skill">
+          <div class="skill skill-1">
             <i class="fa-brands fa-wordpress"></i>
             <p>WordPress</p>
           </div>
-          <div class="skill">
+          <div class="skill skill-1">
             <i class="fa-solid fa-mobile-screen-button"></i>
             <p>Responsive Web Design</p>
           </div>
-          <div class="skill">
+          <div class="skill skill-1">
             <i class="fa-brands fa-chrome"></i>
             <p>Chrome DevTools</p>
           </div>
-          <div class="skill">
+          <div class="skill skill-1">
             <i class="fa-solid fa-file-export"></i>
             <p>FTP & Web Hosting</p>
           </div>
-          <div class="skill">
+          <div class="skill skill-1">
             <i class="fa-regular fa-square"></i>
             <p>Code Sandbox</p>
           </div>
-          <div class="skill">
+          <div class="skill skill-1">
             <i class="fa-regular fa-image"></i>
             <p>Adobe Creative Suite</p>
           </div>
-          <div class="skill">
+          <div class="skill skill-1">
             <i class="fa-solid fa-gear"></i>
             <p>APIs</p>
           </div>
@@ -205,15 +295,15 @@
       </div>
       <!-- Projects -->
       <div id="projects-section">
-        <h2 class="h2">Projects</h2>
-        <div class="project-card">
+        <h2 class="h2 h2-1">Projects</h2>
+        <div class="project-card project-card-1">
           <a href="https://csb-qbchok.netlify.app/" target="_blank">
             <img
               class="project-card-image"
               src="images/sticky-notes-app.jpg"
               alt="sticky notes app"
             />
-            <div class="project-card-body">
+            <div class="project-card-body project-card-body-1">
               <h3 class="project-card-title">Sticky Notes App</h3>
               <p class="project-card-description">
                 A sticky notes app that allows the user to add/edit/save sticky
@@ -227,14 +317,14 @@
             </div>
           </a>
         </div>
-        <div class="project-card">
+        <div class="project-card project-card-1">
           <a href="https://patgramo.github.io/guess-the-word/" target="_blank">
             <img
               class="project-card-image"
               src="images/guessTheWord.jpg"
               alt="guess the word game"
             />
-            <div class="project-card-body">
+            <div class="project-card-body project-card-body-1">
               <h3 class="project-card-title">Guess the Word Game</h3>
               <p class="project-card-description">
                 A game that gives users 8 tries to input letters to guess a
@@ -248,7 +338,7 @@
             </div>
           </a>
         </div>
-        <div class="project-card">
+        <div class="project-card project-card-1">
           <a
             href="https://patgramo.github.io/unplugged-retreat/"
             target="_blank"
@@ -258,7 +348,7 @@
               src="images/retreat.jpg"
               alt="retreat website"
             />
-            <div class="project-card-body">
+            <div class="project-card-body project-card-body-1">
               <h3 class="project-card-title">Company Retreat Website</h3>
               <p class="project-card-description">
                 An example website for a business that provides retreats for
@@ -272,7 +362,7 @@
             </div>
           </a>
         </div>
-        <div class="project-card">
+        <div class="project-card project-card-1">
           <a
             href="https://patgramo.github.io/javascript-drum-kit/"
             target="_blank"
@@ -282,7 +372,7 @@
               src="images/drum-kit.jpg"
               alt="javascript keyboard"
             />
-            <div class="project-card-body">
+            <div class="project-card-body project-card-body-1">
               <h3 class="project-card-title">JS Keyboard Drum</h3>
               <p class="project-card-description">
                 A drum kit that reacts when you press different keyboard keys.
@@ -295,14 +385,14 @@
             </div>
           </a>
         </div>
-        <div class="project-card">
+        <div class="project-card project-card-1">
           <a href="https://tripodipt.wordpress.com/" target="_blank">
             <img
               class="project-card-image"
               src="images/ptWebsite.jpg"
               alt="pt website"
             />
-            <div class="project-card-body">
+            <div class="project-card-body project-card-body-1">
               <h3 class="project-card-title">PT Website</h3>
               <p class="project-card-description">
                 My first WP site that was designed for a Physical Therapist's
@@ -316,14 +406,14 @@
             </div>
           </a>
         </div>
-        <div class="project-card">
+        <div class="project-card project-card-1">
           <a href="https://csb-t4r2z8.netlify.app/" target="_blank">
             <img
               class="project-card-image"
               src="images/nametag-generator.jpg"
               alt="nametag generator app"
             />
-            <div class="project-card-body">
+            <div class="project-card-body project-card-body-1">
               <h3 class="project-card-title">Nametag Generator</h3>
               <p class="project-card-description">
                 An app that allows users to input names and populate nametags.
@@ -339,10 +429,10 @@
       </div>
       <!-- Contact -->
       <div id="contact-section">
-        <h2 class="h2">Let's Connect!</h2>
+        <h2 class="h2 h2-1">Let's Connect!</h2>
         <div class="contact">
           <div class="contact-desc">
-            <h4 class="h4">
+            <h4 class="h4 h4-1">
               Need a website built?
               <br />
               <br />
@@ -353,28 +443,28 @@
               <a
                 href="https://github.com/patgramo"
                 target="_blank"
-                class="icon"
+                class="icon icon-1"
               >
                 <i class="fa-brands fa-github"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/patrickmorrison33"
                 target="_blank"
-                class="icon"
+                class="icon icon-1"
               >
                 <i class="fa-brands fa-linkedin"></i>
               </a>
               <a
                 href="https://www.instagram.com/patgramo"
                 target="_blank"
-                class="icon"
+                class="icon icon-1"
               >
                 <i class="fa-brands fa-instagram"></i>
               </a>
               <a
                 href="https://www.facebook.com/patgramo"
                 target="_blank"
-                class="icon"
+                class="icon icon-1"
               >
                 <i class="fa-brands fa-facebook"></i>
               </a>
@@ -387,24 +477,24 @@
             >
               <input
                 name="name"
-                class="name form-input"
+                class="name form-input form-input-1"
                 type="text"
                 placeholder="Name"
               />
               <input
                 name="email"
-                class="email form-input"
+                class="email form-input form-input-1"
                 type="email"
                 placeholder="Email"
               />
               <input
                 name="subject"
-                class="subject form-input"
+                class="subject form-input form-input-1"
                 type="text"
                 placeholder="Subject"
               />
               <textarea
-                class="project form-input"
+                class="project form-input form-input-1"
                 rows="5"
                 id="comment"
                 name="message"
@@ -413,7 +503,7 @@
               <button
                 type="submit"
                 value="Submit"
-                class="contact-button"
+                class="contact-button contact-button-1"
                 id="contact-submit"
               >
                 Contact Me
@@ -422,36 +512,6 @@
           </div>
         </div>
       </div>
-      <footer>
-        <a
-          href="#"
-          class="footer-img"
-          onclick="removeColorChange2(), removeColorChange3(), removeColorChange4(), colorChange1()"
-        >
-          <img src="images/theme-1.jpg" />
-        </a>
-        <a
-          href="#"
-          class="footer-img"
-          onclick="removeColorChange1(), removeColorChange3(), removeColorChange4(), colorChange2()"
-        >
-          <img src="images/theme-2.jpg" />
-        </a>
-        <a
-          href="#"
-          class="footer-img"
-          onclick="removeColorChange1(), removeColorChange2(), removeColorChange4(), colorChange3()"
-        >
-          <img src="images/theme-3.jpg" />
-        </a>
-        <a
-          href="#"
-          class="footer-img"
-          onclick="removeColorChange1(), removeColorChange2(), removeColorChange3(), colorChange4()"
-        >
-          <img src="images/theme-4.jpg" />
-        </a>
-      </footer>
       <!-- load javascript after loading all html content -->
       <script src="script3.js"></script>
     </div>

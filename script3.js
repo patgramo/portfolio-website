@@ -1,9 +1,9 @@
 const myButton = document.getElementById("my-button");
 const profilePic= document.getElementById("profile-pic");
 const header = document.getElementById("header");
+const navLinks = document.getElementsByClassName("nav-link");
 const smallNav = document.getElementById("small-nav");
-const links = document.getElementsByTagName("a");
-const logo = document.getElementById("logo");
+// const logo = document.getElementById("logo");
 const myNav = document.getElementById("nav");
 const icons= document.getElementsByClassName("icon");
 const highlight = document.getElementById("highlight");
@@ -15,30 +15,39 @@ const cards= document.getElementsByClassName("project-card");
 const cardBodies= document.getElementsByClassName("project-card-body");
 const inputs= document.getElementsByClassName("form-input");
 const contactButton = document.getElementById("contact-submit");
+const colorSchemeDropdown = document.getElementById("color-scheme-dropdown")
+const colorSchemeMenu = document.getElementById("color-scheme-menu");
+const arrow= document.getElementById("arrow");
 
-toggleMenu = () => {
-        if (smallNav.classList.contains("hide")) {
-            smallNav.classList.remove("hide")
-            smallNav.classList.add("show")
-            myButton.innerHTML= "<i class='fa-solid fa-x'></i>"
-           } else if (smallNav.classList.contains("show")) {
-            smallNav.classList.remove("show")
-            smallNav.classList.add("hide")
-            myButton.innerHTML= "<i class='fa-sharp fa-solid fa-bars text-light'></i>"
-           }
-}
-clickLink = () => {
-    if (smallNav.classList.contains("show")) {
+toggleHamburgerMenu = () => {
+    if (smallNav.classList.contains("hide")) {
+        smallNav.classList.remove("hide")
+        smallNav.classList.add("show")
+        myButton.innerHTML= "<i class='fa-solid fa-x'></i>"
+    } else if (smallNav.classList.contains("show")) {
         smallNav.classList.remove("show")
         smallNav.classList.add("hide")
         myButton.innerHTML= "<i class='fa-sharp fa-solid fa-bars text-light'></i>"
+    }  
+}
+
+toggleColorMenu = () => {
+    if(colorSchemeMenu.classList.contains("hide")) {
+        colorSchemeMenu.classList.remove("hide")
+        colorSchemeMenu.classList.add("show-colors")
+        arrow.innerHTML = "Color Scheme <i class='fa-solid fa-angle-up'></i>"
+    } else if (colorSchemeMenu.classList.contains("show-colors")) {
+        colorSchemeMenu.classList.remove("show-colors")
+        colorSchemeMenu.classList.add("hide")
+        arrow.innerHTML = "Color Scheme <i class='fa-solid fa-angle-down'></i>"
     }
 }
 
 colorChange1 = () => {
-    document.getElementById("home").classList.remove("home-container");
-    document.getElementById("home").classList.add("hide-all");
-    document.getElementById("main-page").classList.remove("hide-all");
+    // document.getElementById("home").classList.remove("home-container");
+    // document.getElementById("home").classList.add("hide-all");
+    // document.getElementById("main-page").classList.remove("hide-all");
+    console.log("Hello!");
 
     profilePic.src="images/theme-1-outline.jpg";
 
@@ -50,11 +59,13 @@ colorChange1 = () => {
 
     smallNav.classList.add("small-nav-1");
     
-    for (const link of links) {
-        link.classList.add("a-1");
+    colorSchemeMenu.classList.add("color-scheme-menu-1");
+
+    for (const link of navLinks) {
+        link.classList.add("nav-link-1");
     };
 
-    logo.classList.add("mylogo-1");
+    // logo.classList.add("mylogo-1");
 
     myNav.classList.add("mynav-1");
 
@@ -91,8 +102,6 @@ colorChange1 = () => {
     };
 
     contactButton.classList.add("contact-button-1");
-
-    document.querySelector("footer").classList.add("footer-background-1");
 }
 removeColorChange1 = () => {
 
@@ -103,12 +112,14 @@ removeColorChange1 = () => {
     myButton.classList.remove("hamburger-1");
 
     smallNav.classList.remove("small-nav-1");
-    
-    for (const link of links) {
-        link.classList.remove("a-1");
+
+    colorSchemeMenu.classList.remove("color-scheme-menu-1");
+
+    for (const link of navLinks) {
+        link.classList.remove("nav-link-1");
     };
 
-    logo.classList.remove("mylogo-1");
+    // logo.classList.remove("mylogo-1");
 
     myNav.classList.remove("mynav-1");
 
@@ -145,14 +156,12 @@ removeColorChange1 = () => {
     };
 
     contactButton.classList.remove("contact-button-1");
-
-    document.querySelector("footer").classList.remove("footer-background-1");
 }
 
 colorChange2 = () => {
-    document.getElementById("home").classList.remove("home-container");
-    document.getElementById("home").classList.add("hide-all");
-    document.getElementById("main-page").classList.remove("hide-all");
+    // document.getElementById("home").classList.remove("home-container");
+    // document.getElementById("home").classList.add("hide-all");
+    // document.getElementById("main-page").classList.remove("hide-all");
 
     profilePic.src="images/theme-2-outline.jpg";
 
@@ -164,11 +173,13 @@ colorChange2 = () => {
 
     smallNav.classList.add("small-nav-2");
     
-    for (const link of links) {
-        link.classList.add("a-2");
+    colorSchemeMenu.classList.add("color-scheme-menu-2");
+
+    for (const link of navLinks) {
+        link.classList.add("nav-link-2");
     };
     
-    logo.classList.add("mylogo-2");
+    // logo.classList.add("mylogo-2");
 
     myNav.classList.add("mynav-2");
 
@@ -206,7 +217,6 @@ colorChange2 = () => {
 
     contactButton.classList.add("contact-button-2");
 
-    document.querySelector("footer").classList.add("footer-background-2");
 }
 
 removeColorChange2 = () => {
@@ -219,11 +229,13 @@ removeColorChange2 = () => {
 
     smallNav.classList.remove("small-nav-2");
     
-    for (const link of links) {
-        link.classList.remove("a-2");
+    colorSchemeMenu.classList.remove("color-scheme-menu-2");
+
+    for (const link of navLinks) {
+        link.classList.remove("nav-link-2");
     };
-    
-    logo.classList.remove("mylogo-2");
+
+    // logo.classList.remove("mylogo-2");
 
     myNav.classList.remove("mynav-2");
 
@@ -261,13 +273,12 @@ removeColorChange2 = () => {
 
     contactButton.classList.remove("contact-button-2");
 
-    document.querySelector("footer").classList.remove("footer-background-2");
 }
 
 colorChange3 = () => {
-    document.getElementById("home").classList.remove("home-container");
-    document.getElementById("home").classList.add("hide-all");
-    document.getElementById("main-page").classList.remove("hide-all");
+    // document.getElementById("home").classList.remove("home-container");
+    // document.getElementById("home").classList.add("hide-all");
+    // document.getElementById("main-page").classList.remove("hide-all");
 
     profilePic.src="images/theme-3-outline.jpg";
 
@@ -279,11 +290,13 @@ colorChange3 = () => {
 
     smallNav.classList.add("small-nav-3");
     
-    for (const link of links) {
-        link.classList.add("a-3");
+    colorSchemeMenu.classList.add("color-scheme-menu-3");
+
+    for (const link of navLinks) {
+        link.classList.add("nav-link-3");
     };
 
-    logo.classList.add("mylogo-3");
+    // logo.classList.add("mylogo-3");
 
     myNav.classList.add("mynav-3");
 
@@ -321,8 +334,6 @@ colorChange3 = () => {
 
     contactButton.classList.add("contact-button-3");
 
-    document.querySelector("footer").classList.add("footer-background-3");
-
 }
 
 removeColorChange3 = () => {
@@ -334,12 +345,14 @@ removeColorChange3 = () => {
     myButton.classList.remove("hamburger-3");
 
     smallNav.classList.remove("small-nav-3");
-    
-    for (const link of links) {
-        link.classList.remove("a-3");
+
+    colorSchemeMenu.classList.remove("color-scheme-menu-3");
+
+    for (const link of navLinks) {
+        link.classList.remove("nav-link-3");
     };
 
-    logo.classList.remove("mylogo-3");
+    // logo.classList.remove("mylogo-3");
 
     myNav.classList.remove("mynav-3");
 
@@ -376,14 +389,12 @@ removeColorChange3 = () => {
     };
 
     contactButton.classList.remove("contact-button-3");
-
-    document.querySelector("footer").classList.remove("footer-background-3");
 }
 
 colorChange4 = () => {
-    document.getElementById("home").classList.remove("home-container");
-    document.getElementById("home").classList.add("hide-all");
-    document.getElementById("main-page").classList.remove("hide-all");
+    // document.getElementById("home").classList.remove("home-container");
+    // document.getElementById("home").classList.add("hide-all");
+    // document.getElementById("main-page").classList.remove("hide-all");
 
     profilePic.src="images/theme-4-outline.jpg";
 
@@ -395,11 +406,13 @@ colorChange4 = () => {
 
     smallNav.classList.add("small-nav-4");
     
-    for (const link of links) {
-        link.classList.add("a-4");
+    colorSchemeMenu.classList.add("color-scheme-menu-4");
+
+    for (const link of navLinks) {
+        link.classList.add("nav-link-4");
     };
 
-    logo.classList.add("mylogo-4");
+    // logo.classList.add("mylogo-4");
 
     myNav.classList.add("mynav-4");
 
@@ -436,8 +449,6 @@ colorChange4 = () => {
     };
 
     contactButton.classList.add("contact-button-4");
-
-    document.querySelector("footer").classList.add("footer-background-4");
 }
 
 removeColorChange4 = () => {
@@ -449,12 +460,14 @@ removeColorChange4 = () => {
     myButton.classList.remove("hamburger-4");
 
     smallNav.classList.remove("small-nav-4");
-    
-    for (const link of links) {
-        link.classList.remove("a-4");
+
+    colorSchemeMenu.classList.remove("color-scheme-menu-4");
+
+    for (const link of navLinks) {
+        link.classList.remove("nav-link-4");
     };
 
-    logo.classList.remove("mylogo-4");
+    // logo.classList.remove("mylogo-4");
 
     myNav.classList.remove("mynav-4");
 
@@ -492,12 +505,4 @@ removeColorChange4 = () => {
 
     contactButton.classList.remove("contact-button-4");
 
-    document.querySelector("footer").classList.remove("footer-background-4");
-}
-
-homepage = () => {
-    document.getElementById("main-page").classList.remove("show-all");
-    document.getElementById("main-page").classList.add("hide-all");
-    document.getElementById("home").classList.add("home-container");
-    document.getElementById("home").classList.remove("hide-all");
 }

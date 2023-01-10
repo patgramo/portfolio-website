@@ -50,14 +50,17 @@ p {
   background-color: #373e98;
   box-shadow: 0 10px 10px -10px black;
 }
-.small-nav-1 a {
+.color-scheme-menu-1 {
+  background-color: #373e98;
+  box-shadow: 0 10px 10px -10px black;
+}
+.nav-link-1 {
   color: white;
 }
-.mylogo-1 {
-  color: white;
+.nav-link-1:hover {
+  color: #fcf800;
 }
 .mynav-1 a {
-  color: white;
   border-right: 2px solid white;
 }
 .icon-1 {
@@ -69,10 +72,6 @@ p {
 .highlighter-1 {
   background-color: #f16775;
 }
-.a-1:hover {
-  color: #fcf800;
-}
-
 .h2-1 {
   color: #fffd6e;
   width: 100%;
@@ -123,6 +122,15 @@ p {
   background-color: #efefef;
   box-shadow: 0 10px 10px -10px gray;
 }
+.nav-link-2 {
+  color: #183a1d;
+}
+.nav-link-2:hover {
+  color: #71c9dc;
+}
+.mynav-2 a {
+  border-right: 2px solid #ff3b3f;
+}
 .hamburger-2 {
   color: black;
 }
@@ -130,15 +138,9 @@ p {
   box-shadow: 0 10px 10px -10px gray;
   background-color: #efefef;
 }
-.small-nav-2 a {
-  color: #ff3b3f;
-}
-.mylogo-2 {
-  color: #ff3b3f;
-}
-.mynav-2 a {
-  color: #ff3b3f;
-  border-right: 2px solid #ff3b3f;
+.color-scheme-menu-2 {
+  box-shadow: 0 10px 10px -10px gray;
+  background-color: #efefef;
 }
 .icon-2 {
   color: #ff3b3f;
@@ -154,9 +156,6 @@ p {
   width: 100%;
   text-align: center;
   margin: 15px 0;
-}
-.a-2:hover {
-  color: #71c9dc;
 }
 .skill-section-2 {
   border-radius: 20px;
@@ -202,8 +201,15 @@ p {
   background-color: #111620;
 }
 .header-background-3 {
-  background-color: #111620;
+  background-color: #23262b;
   box-shadow: 0 15px 10px -10px black;
+}
+.nav-link-3 {
+  color: white;
+}
+.nav-link-3:hover {
+  background-color: #07dea8;
+  color: #111620;
 }
 .hamburger-3 {
   color: white;
@@ -213,15 +219,10 @@ p {
   color: white;
   box-shadow: 0 15px 10px -10px black;
 }
-.small-nav-3 a {
+.color-scheme-menu-3 {
+  background-color: #111620;
   color: white;
-}
-.mylogo-3 {
-  color: white;
-}
-.mynav-3 a {
-  color: white;
-  border-right: 2px solid #5e0dfb;
+  box-shadow: 0 15px 10px -10px black;
 }
 .icon-3 {
   color: #5e0dfb;
@@ -233,16 +234,12 @@ p {
   background-color: #07dea8;
   color: #111620;
 }
-.a-3:hover {
-  color: #07dea8;
-}
 .h2-3 {
   color: #5e0dfb;
   width: 100%;
   text-align: center;
   margin: 15px 0;
 }
-
 .skill-3 {
   color: white;
 }
@@ -287,23 +284,25 @@ p {
   background-color: #fefbe9;
   box-shadow: 0 10px 10px -10px black;
 }
+.nav-link-4 {
+  color: #183a1d;
+}
+.nav-link-4:hover {
+  color: #f6c453;
+}
+.mynav-4 a {
+  border-right: 2px solid #183a1d;
+}
 .hamburger-4 {
   color: #183a1d;
 }
 .small-nav-4 {
   background-color: #fefbe9;
-  color: #183a1d;
   box-shadow: 0 15px 10px -10px black;
 }
-.small-nav-4 a {
-  color: #183a1d;
-}
-.mylogo-4 {
-  color: #183a1d;
-}
-.mynav-4 a {
-  color: #183a1d;
-  border-right: 2px solid #183a1d;
+.color-scheme-menu-4 {
+  background-color: #fefbe9;
+  box-shadow: 0 15px 10px -10px black;
 }
 .icon-4 {
   color: #f0a04b;
@@ -314,9 +313,6 @@ p {
 .highlighter-4 {
   background-color: #e1eedd;
   color: #183a1d;
-}
-.a-4:hover {
-  color: #f6c453;
 }
 .h2-4 {
   color: #f0a04b;
@@ -403,29 +399,12 @@ p {
 .home-h3 {
   margin: 0;
 }
-.color-buttons {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-.color-buttons img {
-  width: 40%;
-  margin-bottom: 1em;
-  padding: none;
-}
-.color-buttons img:hover {
-  cursor: pointer;
-  box-shadow: -3px 3px 10px gray;
-}
+
 /***Header***/
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
-  height: 4em;
+  height: 3em;
   width: 100%;
 }
 .large-nav {
@@ -433,23 +412,26 @@ header {
 }
 .show {
   position: absolute;
-  left: 0px;
-  top: 64px;
+  right: 0px;
+  top: 49px;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  padding-left: 3.2em;
+  align-items: flex-end;
+  width: 20%;
+  padding-right: 1.5em;
   height: 200px;
 }
 .hide {
   display: none;
 }
-header button {
-  margin-right: 2em;
+#my-button {
   background: transparent;
   border: 0;
+  height: 100%;
+  font-size: 18px;
+  float: right;
+  margin-right: 10px;
 }
 .hamburger i {
   font-size: 2em;
@@ -461,26 +443,23 @@ header button {
 .mynav {
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
   padding: 10px;
   margin: 0;
   height: 100%;
 }
-#no-border {
-  border-right: none;
+.mynav button {
+  background-color: transparent;
+  border: 0;
 }
 .nav-link {
   width: 100%;
+  float: right;
 }
 .nav-link:hover {
   cursor: pointer;
   text-decoration: underline;
-}
-#logo {
-  font-size: 1.5em;
-  padding-left: 1em;
-  font-weight: bold;
 }
 
 /***About***/
@@ -686,14 +665,7 @@ footer a img {
 /******** TABLET ********/
 
 @media all and (min-width: 700px) {
-  /*** Homepage ***/
-  .color-buttons img {
-    margin: 1em;
-  }
   /***Header***/
-  #logo {
-    font-size: 2em;
-  }
   .small-nav {
     display: none;
   }
@@ -758,26 +730,56 @@ footer a img {
     }
 
     /***Header***/
+    header {
+      height: 4em;
+    }
     .small-nav {
       display: none;
     }
     .large-nav {
       display: flex;
-      width: 50%;
+      width: 100%;
       font-size: 20px;
       padding-right: 2em;
     }
     .mynav {
       flex-flow: row wrap;
+      justify-content: space-around;
       align-items: center;
       width: 100%;
       height: auto;
+      margin-top: 5px;
     }
     .mynav a {
-      width: 23%;
+      width: 18%;
       text-align: center;
     }
-
+    #color-scheme-dropdown {
+      width: 18%;
+      float: left;
+      overflow: hidden;
+    }
+    #arrow {
+      font-family: "Coda", cursive;
+      font-size: 20px;
+    }
+    on #color-scheme-dropdown p {
+      font-size: 20px;
+    }
+    .show-colors {
+      position: absolute;
+      display: block;
+      z-index: 1;
+      width: inherit;
+      margin-top: 40px;
+    }
+    #color-scheme-menu button {
+      float: none;
+      padding: 12px 16px;
+      display: block;
+      text-align: left;
+      font-family: "Coda", cursive;
+    }
     .hamburger {
       display: none;
     }
